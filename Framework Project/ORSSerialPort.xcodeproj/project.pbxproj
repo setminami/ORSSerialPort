@@ -10,7 +10,6 @@
 		9D64D0E71B9CBC99009D1AEB /* ORSSerialBuffer.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D64D0E51B9CBC99009D1AEB /* ORSSerialBuffer.h */; };
 		9D64D0E81B9CBC99009D1AEB /* ORSSerialBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D64D0E61B9CBC99009D1AEB /* ORSSerialBuffer.m */; };
 		9D7472181B6D7767002D8B10 /* ORSSerialPort_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D7472171B6D7767002D8B10 /* ORSSerialPort_Tests.m */; };
-		9D7472191B6D7767002D8B10 /* ORSSerial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DCA89121A2BB106009285EB /* ORSSerial.framework */; };
 		9D7472201B6D7787002D8B10 /* ORSSerialPacketDescriptor_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9D74721F1B6D7787002D8B10 /* ORSSerialPacketDescriptor_Tests.m */; };
 		9DCA89321A2BB15A009285EB /* ORSSerial.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DCA89311A2BB15A009285EB /* ORSSerial.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9DCA893A1A2BB1E2009285EB /* ORSSerialPort.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DCA89341A2BB1E2009285EB /* ORSSerialPort.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -62,7 +61,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D7472191B6D7767002D8B10 /* ORSSerial.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -221,16 +219,17 @@
 		9DCA89091A2BB106009285EB /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 0910;
 				ORGANIZATIONNAME = "Open Reel Software";
 				TargetAttributes = {
 					9D7472121B6D7767002D8B10 = {
 						CreatedOnToolsVersion = 6.4;
+						DevelopmentTeam = 4KL73BPFQ7;
 					};
 					9DCA89111A2BB106009285EB = {
 						CreatedOnToolsVersion = 6.1;
 						DevelopmentTeam = 4KL73BPFQ7;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -367,6 +366,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4KL73BPFQ7;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -384,7 +384,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -421,6 +421,7 @@
 				COPY_PHASE_STRIP = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 4KL73BPFQ7;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -431,7 +432,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -442,8 +443,9 @@
 		9DCA89291A2BB106009285EB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				CODE_SIGN_IDENTITY = "Mac Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 4KL73BPFQ7;
@@ -468,8 +470,9 @@
 		9DCA892A1A2BB106009285EB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = NO;
 				CODE_SIGN_IDENTITY = "Mac Developer";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_STYLE = Manual;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 4KL73BPFQ7;
